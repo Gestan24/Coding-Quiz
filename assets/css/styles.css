@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+:root {
+
+    --background: rgb(240, 202, 157);
+
+    --bttn: rgb(235, 216, 192);
+
+    --bttn-neutral: rgb(31, 158, 231);
+
+    --incorrect: rgb(250, 36, 36);
+
+    --correct: rgb(52, 212, 52);
+
+
+}
+
+body {
+
+    background-color: var(--background);
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+body.correct {
+
+    background-color: var(--correct);
+
+}
+
+body.incorrect {
+
+    background-color: var(--incorrect);
+
+}
+
+.box {
+
+    width: 800px;
+
+    max-width: 80%;
+
+    background-color: white;
+
+    border-radius: 5px;
+
+    padding: 10px;
+
+    box-shadow: 0 0 15px 5px;
+
+}
+
+.bttn-grid {
+
+ display: grid;
+ 
+ grid-template-columns: repeat(2,auto);
+
+ gap: 10px;
+
+ margin: 20px 0;
+
+}
+
+.bttn {
+
+    background-color: var(--bttn);
+
+    border: 1px solid var(--bttn);
+
+    border-radius: 5px;
+
+    padding: 10px 15px;
+
+    font: bold;
+
+    outline: none;
+
+}
+
+.bttn:hover {
+
+    border-color: var(--bttn-neutral);
+
+}
+
+.bttn.correct {
+
+    
+}
+ 
