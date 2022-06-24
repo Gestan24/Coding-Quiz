@@ -43,17 +43,6 @@ body {
 
 }
 
-body.correct {
-
-    background-color: var(--correct);
-
-}
-
-body.incorrect {
-
-    background-color: var(--incorrect);
-
-}
 
 .box {
 
@@ -66,7 +55,7 @@ body.incorrect {
     border-radius: 5px;
 
     padding: 10px;
-
+    
     box-shadow: 0 0 15px 5px;
 
 }
@@ -85,9 +74,11 @@ body.incorrect {
 
 .bttn {
 
-    background-color: var(--bttn);
+    background-color: rgb(71, 3, 71);
 
-    border: 1px solid var(--bttn);
+    color: var(--bttn);
+
+    border: 5px solid var(--bttn);
 
     border-radius: 5px;
 
@@ -107,6 +98,39 @@ body.incorrect {
 
 .bttn.correct {
 
-    
+    background-color: var(--correct);
+
+}
+
+.bttn.incorrect {
+
+    background-color: var(--incorrect);
+
+    color: white;
+
+}
+
+.start-bttn, .next-bttn {
+
+    font-weight: bold;
+
+    padding: 15px 30px;
+
+}
+
+.buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+.hide {
+
+    display: none;
+
 }
  
