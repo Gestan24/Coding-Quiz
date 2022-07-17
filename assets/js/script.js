@@ -11,6 +11,12 @@ var questionEl = document.querySelector('#question');
 
 var answerButtonEl = document.querySelector('#answer-buttons');
 
+var startTime = 1
+
+let time = startTime * 60;
+
+var timerEl = document.getElementById('timer');
+
 
 
 
@@ -21,6 +27,8 @@ function startQuiz() {
 
     console.log('started')
 
+    setInterval(countDown, 1000);
+
     startButton.classList.add('hide')
 
     randomQuestions = questions.sort(() => Math.random() - .5)
@@ -28,6 +36,8 @@ function startQuiz() {
     currentQuestionIndex = 0
 
     questionBoxEl.classList.remove('hide')
+
+    
 
     nextQuestion()
 
@@ -108,7 +118,7 @@ function selAnswer(event) {
         startButton.innerText = 'Restart'
 
         startButton.classList.remove('hide')
-        
+
     }
 
    
@@ -179,6 +189,24 @@ var questions = [
     }
 ]
 
+function countDown() {
+
+    var minutes = Math.floor(time / 60);
+
+    var seconds = minutes * 60;
+
+    seconds = seconds < 1 ? '0' + seconds : seconds;
+
+    timerEl.innerHTML = minutes + ":" + seconds;
+
+    time--;
+}
+
+function endQuiz() {
+
+
+}
+
 
 startButton.addEventListener('click', startQuiz)
 
@@ -189,3 +217,6 @@ nextButton.addEventListener('click', () => {
     nextQuestion()
 
 })
+
+
+

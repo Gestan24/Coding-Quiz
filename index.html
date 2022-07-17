@@ -12,6 +12,8 @@
 
     <title>Coding Quiz</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
     <link href="./assets/css/styles.css" rel="stylesheet">
 
 </head>
@@ -19,39 +21,61 @@
 
 <body>
 
-  
+   <header class="hero">
 
-    <div class="box">
+    <div class="hero-body">
 
+        <h1 class="title has-text-centered">
 
-        <div id="question-box" class="hide">
+            Coding Quiz!
 
-            <div id="question">Question</div>
+        </h1>
 
-            <div id="answer-buttons" class="bttn-grid">
+        <p id="timer" class="has-text-right is-size-2">1:00</p>
 
-                <button class="bttn">Answer 1</button>
-
-                <button class="bttn">Answer 2</button>
-
-                <button class="bttn">Answer 3</button>
-
-                <button class="bttn">Answer 4</button>
-
-            </div>
-
-        </div>
-
-        <div class="buttons">
-
-            <button id="start-bttn" class="start-bttn bttn">Start Quiz</button>
-
-            <button id="next-bttn" class="next-bttn bttn hide">Next</button>
-
-        </div>
-
-
+        <nav>
+            
+            <a href="./scores.html">High Scores</a>
+        </nav>
     </div>
+   </header>
+
+   <section class="body">
+
+       <div class="box">
+    
+    
+           <div id="question-box" class="hide">
+    
+               <div id="question">Question</div>
+    
+               <div id="answer-buttons" class="bttn-grid">
+    
+                   <button class="bttn">Answer 1</button>
+    
+                   <button class="bttn">Answer 2</button>
+    
+                   <button class="bttn">Answer 3</button>
+    
+                   <button class="bttn">Answer 4</button>
+    
+               </div>
+    
+           </div>
+    
+           <div class="buttons">
+    
+               <button id="start-bttn" class="start-bttn bttn">Start Quiz</button>
+    
+               <button id="next-bttn" class="next-bttn bttn hide">Next</button>
+    
+           </div>
+    
+    
+       </div>
+
+   </section>
+
     
     
     

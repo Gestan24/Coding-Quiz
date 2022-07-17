@@ -23,7 +23,7 @@
 
 }
 
-body {
+.body {
 
     background-color: var(--background);
 
@@ -132,5 +132,29 @@ body {
 
     display: none;
 
+}
+
+.hero {
+
+    background-color: rgb(71, 3, 71);
+
+}
+
+.title {
+
+    color: var(--background);
+}
+
+a {
+
+    color: var(--background);
+
+    text-decoration: underline;
+}
+
+p {
+
+    color: var(--background);
+    
 }
  
